@@ -1,0 +1,22 @@
+{
+  "name": "line-counter",
+  "displayName": "Line Counter",
+  "description": "Простой плагин для подсчёта строк в текущем файле",
+  "version": "0.0.1",
+  "publisher": "you",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "activationEvents": [
+    "onCommand:extension.countLines"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.countLines",
+        "title": "Подсчитать количество строк"
+      }
+    ]
+  }
+}
